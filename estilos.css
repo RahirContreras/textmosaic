@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.nav-bar {
+    margin: 20px 0;
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-bar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.intro, .vision, .objetivos {
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2, .vision h2, .objetivos h2 {
+    color: #35424a;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto 2rem auto;
+}
+
+.imagenes img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Botones generales */
+button, .btn {
+    background-color: #35424a;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+button:hover, .btn:hover {
+    background-color: #1d2327;
+}
+
+/* Secciones destacadas */
+section {
+    background: #fff;
+    margin: 30px auto;
+    padding: 30px 20px;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* Títulos de sección */
+section h2 {
+    color: #2a3a4a;
+    margin-bottom: 15px;
+}
+
+/* Listas dentro de secciones */
+section ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Videos responsivos */
+.videos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.videos video {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Formularios */
+form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    max-width: 600px;
+    margin: 20px auto;
+}
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Sección de políticas */
+.politicas ul {
+    background: #f4f8fb;
+    border-radius: 6px;
+    padding: 15px 25px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.politicas ul li strong {
+    color: #35424a;
+}
+
+/* Estilos para enlaces dentro de listas */
+li a {
+    color: #009dff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 1px 4px rgba(53,66,74,0.04);
+    display: inline-block;
+}
+
+li a:hover, li a:focus {
+    background: #000000;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(53,66,74,0.10);
+    text-decoration: none;
+    outline: none;
+}
+
+/* Responsive para móviles */
+@media (max-width: 700px) {
+    .imagenes {
+        flex-direction: column;
+        width: 100%;
+    }
+    .imagenes img {
+        max-width: 90%;
+        margin-bottom: 15px;
+    }
+    .videos {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
